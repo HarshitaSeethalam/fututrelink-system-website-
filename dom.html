@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FutureLink Systems</title>
+
+<style>
+body{font-family:Arial;margin:0}
+
+header{
+background:#2c3e50;
+color:white;
+text-align:center;
+padding:20px;
+font-size:30px;
+}
+
+.hero{position:relative;text-align:center;color:white}
+
+.hero img{
+width:100%;
+height:400px;
+object-fit:cover;
+}
+
+.hero-text{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+font-size:40px;
+background:rgba(0,0,0,0.5);
+padding:20px;
+}
+
+.about{
+padding:40px;
+text-align:center;
+font-size:18px;
+}
+
+.image-track{
+overflow:hidden;
+white-space:nowrap;
+background:#f2f2f2;
+padding:20px;
+}
+
+.track img{
+width:220px;
+height:150px;
+margin:10px;
+border-radius:10px;
+}
+
+.box-container{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:40px;
+}
+
+.box{
+width:300px;
+border:2px solid black;
+padding:20px;
+border-radius:10px;
+}
+
+footer{
+background:#333;
+color:white;
+display:flex;
+justify-content:space-between;
+padding:30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>FutureLink Systems</header>
+
+<div class="hero">
+<img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d">
+<div class="hero-text">Connecting Technology</div>
+</div>
+
+<div class="about">
+<h2>About Company</h2>
+<p>
+FutureLink Systems specializes in networking technologies,
+enterprise platforms and advanced communication systems
+for global organizations.
+</p>
+</div>
+
+<div class="image-track">
+<div class="track" id="track">
+
+<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+<img src="https://images.unsplash.com/photo-1507209696998-3c532be9b2b5">
+<img src="https://images.unsplash.com/photo-1551434678-e076c223a692">
+
+</div>
+</div>
+
+<div class="box-container">
+
+<div class="box">
+<h3>Company Details</h3>
+Founded: 2014<br>
+Employees: 420<br>
+Industry: Networking Technology
+</div>
+
+<div class="box">
+<h3>Company Directors</h3>
+CEO: Michael Brown<br>
+CTO: Olivia Davis
+</div>
+
+</div>
+
+<footer>
+
+<div>
+Name: Harshita Seethalam<br>
+Contact: 6301524267<br>
+Email: harshitaseethalam333@gmail.com<br>
+LinkedIn: www.linkedin.com/in/seetalam-harshita-vardhini-sai-sri-valli-3735b7335<br>
+GitHub: https://github.com/HarshitaSeethalam
+</div>
+
+<div>
+Street: sanjay nagar<br>
+Town: tadepalligudem<br>
+District: west godavari<br>
+State: Andhra Pradesh<br>
+Country: India
+</div>
+
+</footer>
+
+<script>
+
+let track=document.getElementById("track")
+let position=0
+let direction=1
+
+function move(){
+position+=direction
+track.style.transform="translateX("+position+"px)"
+
+if(position>200 || position<-200){
+direction*=-1
+}
+}
+
+setInterval(move,30)
+
+</script>
+
+</body>
+</html>
